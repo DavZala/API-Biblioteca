@@ -30,6 +30,10 @@ public class LibroController {
 
     @PostMapping
     public Libro guardarLibro(@RequestBody Libro libro){
+        System.out.println(libro.getAutor());
+        System.out.println(libro.getTitulo());
+        System.out.println(libro.getGenero());
+        System.out.println(libro.isDisponible());
         return libroService.guardarLibro(libro);
     }
 

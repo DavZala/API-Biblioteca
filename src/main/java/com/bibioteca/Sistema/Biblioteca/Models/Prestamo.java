@@ -22,6 +22,7 @@ public class Prestamo {
 
     @Column(nullable = false)
     private LocalDate fechaPrestamo;
+    @Column(nullable = false)
     private LocalDate fechaDevolucion;
 
 }
